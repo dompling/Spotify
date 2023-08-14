@@ -26,7 +26,7 @@
             return base64encode(digest);
         }
 
-        const redirectUri = 'scriptable:///run/Spotify';
+        const redirectUri = 'scriptable:///run/Spotify?openEditor=true';
 
         const urlParams = new URLSearchParams(window.location.search);
         const clientId = urlParams.get('clientId');
