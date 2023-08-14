@@ -1,0 +1,11 @@
+/node_modules
+# production
+/build
+/.vscode
+/.idea
+/.history
+test.js
+Env.js
+.DS_Store
+.DS_Store
+/.output
