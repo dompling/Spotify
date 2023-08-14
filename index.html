@@ -31,8 +31,7 @@
         const urlParams = new URLSearchParams(window.location.search);
         const clientId = urlParams.get('clientId');
         const codeVerifier = urlParams.get('codeVerifier');
-        const scope = urlParams.get('scope')
-
+        const scope = decodeURIComponent(urlParams.get('scope') || "");
 
         generateCodeChallenge(codeVerifier).then(codeChallenge => {
             let state = generateRandomString(16);
